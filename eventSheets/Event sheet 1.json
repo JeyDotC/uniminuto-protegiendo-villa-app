@@ -1,0 +1,749 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 558011612948575
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "SetupDialogs",
+					"sid": 534715694415966
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 516098000362346,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"RevealThreats\"",
+						"function": "RevealThreats"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 191609782165832,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"ClearCloud\"",
+						"function": "ClearCloud"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 182813596596278,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "move-to-object",
+					"objectClass": "DialogBackground",
+					"sid": 805619423418240,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "DialogPositioner",
+						"image-point": "0",
+						"mode": "direct"
+					}
+				}
+			],
+			"sid": 756449918978707
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Actors",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-calculating-path",
+							"objectClass": "Actor",
+							"sid": 384938096091469,
+							"behaviorType": "Pathfinding",
+							"isInverted": true
+						},
+						{
+							"id": "is-moving-along-path",
+							"objectClass": "Actor",
+							"sid": 376959553367454,
+							"behaviorType": "Pathfinding",
+							"isInverted": true
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Actor",
+							"sid": 725678352667538,
+							"parameters": {
+								"object": "DB"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "find-path",
+							"objectClass": "Actor",
+							"sid": 128529518907988,
+							"behaviorType": "Pathfinding",
+							"parameters": {
+								"x": "DB.X",
+								"y": "DB.Y"
+							}
+						},
+						{
+							"id": "wait-for-previous-actions",
+							"objectClass": "System",
+							"sid": 600376189473904
+						},
+						{
+							"id": "move-along-path",
+							"objectClass": "Actor",
+							"sid": 907899821010419,
+							"behaviorType": "Pathfinding"
+						}
+					],
+					"sid": 667646907897591
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Actor",
+							"sid": 420020218511973,
+							"behaviorType": "Pathfinding"
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Actor",
+							"sid": 765197908975183,
+							"parameters": {
+								"object": "DB"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 598860283389283,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 975547174117499,
+									"parameters": {
+										"instance-variable": "Origin",
+										"comparison": 0,
+										"value": "\"Web\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Actor",
+									"sid": 574417918588268,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "WebApp.X",
+										"y": "WebApp.Y"
+									}
+								}
+							],
+							"sid": 290319868826817
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 536671391242817,
+									"parameters": {
+										"instance-variable": "Origin",
+										"comparison": 0,
+										"value": "\"Mobile\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Actor",
+									"sid": 420300141511524,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "MobileApp.X",
+										"y": "MobileApp.Y"
+									}
+								}
+							],
+							"sid": 103782159105203
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 246894340302038,
+									"parameters": {
+										"instance-variable": "Origin",
+										"comparison": 0,
+										"value": "\"External\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Actor",
+									"sid": 506223122591046,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "External.X",
+										"y": "External.Y"
+									}
+								}
+							],
+							"sid": 972040732624077
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 131938654345033,
+									"parameters": {
+										"instance-variable": "Origin",
+										"comparison": 0,
+										"value": "\"EvilLair\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Actor",
+									"sid": 637819046635059,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"x": "EvilLair.X",
+										"y": "EvilLair.Y"
+									}
+								}
+							],
+							"sid": 139989775414738
+						},
+						{
+							"eventType": "block",
+							"conditions": [],
+							"actions": [
+								{
+									"id": "wait-for-previous-actions",
+									"objectClass": "System",
+									"sid": 258221237262268
+								},
+								{
+									"id": "move-along-path",
+									"objectClass": "Actor",
+									"sid": 975316957083877,
+									"behaviorType": "Pathfinding"
+								}
+							],
+							"sid": 385808475846214
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "Actor",
+							"sid": 459764437314162,
+							"behaviorType": "FadeOut"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Actor",
+							"sid": 975502320149949,
+							"parameters": {
+								"animation": "Self.UserType",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "Actor",
+							"sid": 312667082049396,
+							"behaviorType": "FadeIn"
+						}
+					],
+					"sid": 893734718040055
+				}
+			],
+			"sid": 124879747200807
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentDialog",
+			"type": "number",
+			"initialValue": "-1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 728137330622559
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Functions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "SetupDialogs",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 636262031328853,
+							"parameters": {
+								"x": "0",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 520182008382417,
+							"parameters": {
+								"x": "0",
+								"y": "1",
+								"value": "\"¡Oh Dios mío, La villa está en llamas!\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 592758673026167,
+							"parameters": {
+								"x": "1",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 174476391808953,
+							"parameters": {
+								"x": "1",
+								"y": "1",
+								"value": "\"Hay usuarios maliciosos haciendo mucho daño\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 604461446959348,
+							"parameters": {
+								"x": "2",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 784682760481267,
+							"parameters": {
+								"x": "2",
+								"y": "1",
+								"value": "\"Por suerte, hemos empezado a implementar medidas de seguridad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 893560879160576,
+							"parameters": {
+								"x": "3",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 810582855580247,
+							"parameters": {
+								"x": "3",
+								"y": "1",
+								"value": "\"Estamos implementando un proceso S-SDLC, o Ciclo de vida de software seguro, por sus siglas en inglés.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 175608487175497,
+							"parameters": {
+								"x": "4",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 181713067548210,
+							"parameters": {
+								"x": "4",
+								"y": "1",
+								"value": "\"Empezaremos por identificar las diferentes amenazas.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 479777520963992,
+							"parameters": {
+								"x": "5",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 661264022537028,
+							"parameters": {
+								"x": "5",
+								"y": "1",
+								"value": "\"¡Ew, mira todos esos usuarios maliciosos!\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 194394458916132,
+							"parameters": {
+								"x": "5",
+								"y": "2",
+								"value": "\"RevealThreats\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 797746902238048,
+							"parameters": {
+								"x": "6",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 851421210715295,
+							"parameters": {
+								"x": "6",
+								"y": "1",
+								"value": "\"Hasta hay una empresa malvada accediendo a nuestra API\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 919620448709730,
+							"parameters": {
+								"x": "6",
+								"y": "2",
+								"value": "\"ClearCloud\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 271346084921567,
+							"parameters": {
+								"x": "7",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 433388747204332,
+							"parameters": {
+								"x": "7",
+								"y": "1",
+								"value": "\"Sé que tantos colores te pueden parecer confusos...\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 275783122774625,
+							"parameters": {
+								"x": "8",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 924229463114381,
+							"parameters": {
+								"x": "8",
+								"y": "1",
+								"value": "\"...por eso ponemos una lista con los perfiles de todos esos indeseables\""
+							}
+						}
+					],
+					"sid": 467457548508982
+				},
+				{
+					"functionName": "NextDialog",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 379775885157058,
+							"parameters": {
+								"variable": "CurrentDialog",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "TouristGuide",
+							"sid": 404516323118310,
+							"parameters": {
+								"animation": "Dialogs.At(CurrentDialog, 0)",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "DialogText",
+							"sid": 942855712767779,
+							"behaviorType": "FadeOut"
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NextButton",
+							"sid": 151948378556436,
+							"parameters": {
+								"instance-variable": "Clickable",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 516785029501362
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "DialogText",
+							"sid": 302411111319592,
+							"behaviorType": "FadeOut"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "DialogText",
+							"sid": 637379446807965,
+							"parameters": {
+								"text": "Dialogs.At(CurrentDialog, 1)"
+							}
+						},
+						{
+							"id": "start-fade",
+							"objectClass": "DialogText",
+							"sid": 139947827124892,
+							"behaviorType": "FadeIn"
+						}
+					],
+					"sid": 551324241240226
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "DialogText",
+							"sid": 846288808830774,
+							"behaviorType": "FadeIn"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "NextButton",
+							"sid": 141660234943058,
+							"parameters": {
+								"instance-variable": "Clickable",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 429485323193236,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-at-xy",
+									"objectClass": "Dialogs",
+									"sid": 200154259803140,
+									"parameters": {
+										"x": "CurrentDialog",
+										"y": "2",
+										"comparison": 1,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-mapped-function",
+									"objectClass": "Functions",
+									"sid": 155517917500292,
+									"parameters": {
+										"name": "\"DialogActions\"",
+										"string": "Dialogs.At(CurrentDialog, 2)",
+										"forward-params": "0"
+									}
+								}
+							],
+							"sid": 173584343442433
+						}
+					]
+				},
+				{
+					"functionName": "RevealThreats",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Actor",
+							"sid": 849766752271465,
+							"behaviorType": "FadeOut"
+						}
+					],
+					"sid": 298386970893497
+				},
+				{
+					"functionName": "ClearCloud",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "start-fade",
+							"objectClass": "Cloud",
+							"sid": 414608332963587,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 316832472706552
+				}
+			],
+			"sid": 494997529829919
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UI",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 239358444002787,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "NextButton"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "NextButton",
+							"sid": 463343482201221,
+							"parameters": {
+								"instance-variable": "Clickable"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "NextDialog",
+							"sid": 930674909086047
+						}
+					],
+					"sid": 647557458833895
+				}
+			],
+			"sid": 903490487364262
+		}
+	],
+	"sid": 754652449799065
+}

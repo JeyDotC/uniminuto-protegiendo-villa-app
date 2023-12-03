@@ -1,0 +1,27 @@
+{
+	"name": "DialogBackground",
+	"plugin-id": "TiledBg",
+	"sid": 557402591922237,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 347670405245733
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7960163,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

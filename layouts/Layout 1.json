@@ -3173,7 +3173,7 @@
 						"x": 1296,
 						"y": 16,
 						"width": 640,
-						"height": 128,
+						"height": 176,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -3246,7 +3246,7 @@
 				{
 					"type": "DialogText",
 					"properties": {
-						"text": "Hola, ¡Bienvenido a Villa App!",
+						"text": "Hola, ¡Bienvenido a Villa App! Aquí puedes ver una típica aplicación Web, con su [b]Base de Datos[/b], [b]Lógica de Negocio[/b], una [b]Página Web[/b], y una [b]API[/b] para conectar nuestra [b]App móvil[/b] y empresas externas",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 15,
@@ -3263,7 +3263,7 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"text-direction": "ltr",
-						"icon-set": -1,
+						"icon-set": 891589218663143,
 						"initially-visible": true,
 						"origin": "top-left",
 						"read-aloud": false
@@ -3324,7 +3324,7 @@
 						"x": 1392,
 						"y": 32,
 						"width": 496,
-						"height": 96,
+						"height": 144,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -3414,35 +3414,6 @@
 						"width": 32,
 						"height": 76,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ThreatDescription",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 71,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1296,
-						"y": 432,
-						"width": 720,
-						"height": 544,
-						"originX": 0,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -3631,7 +3602,7 @@
 		{
 			"type": "Dialogs",
 			"properties": {
-				"width": 10,
+				"width": 40,
 				"height": 3,
 				"depth": 1
 			},

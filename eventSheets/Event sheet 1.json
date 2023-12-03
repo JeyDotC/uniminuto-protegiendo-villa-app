@@ -362,11 +362,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "Dialogs",
-							"sid": 174476391808953,
+							"sid": 123920056442865,
 							"parameters": {
 								"x": "1",
 								"y": "1",
-								"value": "\"Hay usuarios maliciosos haciendo mucho daño\""
+								"value": "\"Hay usuarios maliciosos haciendo mucho daño, pero no sabemos quiénes son\""
 							}
 						},
 						{
@@ -442,11 +442,11 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "Dialogs",
-							"sid": 661264022537028,
+							"sid": 116691141136237,
 							"parameters": {
 								"x": "5",
 								"y": "1",
-								"value": "\"¡Ew, mira todos esos usuarios maliciosos!\""
+								"value": "\"¡Ew, mira todos esos usuarios maliciosos que se han colado entre los legítimos!\""
 							}
 						},
 						{
@@ -522,11 +522,511 @@
 						{
 							"id": "set-at-xy",
 							"objectClass": "Dialogs",
-							"sid": 924229463114381,
+							"sid": 148959684510842,
 							"parameters": {
 								"x": "8",
 								"y": "1",
-								"value": "\"...por eso ponemos una lista con los perfiles de todos esos indeseables\""
+								"value": "\"...por eso hemos hecho una lista con los perfiles de todos esos indeseables\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 516786229742134,
+							"parameters": {
+								"x": "9",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 219769939298648,
+							"parameters": {
+								"x": "9",
+								"y": "1",
+								"value": "\"Durante la fase de [b]Capacitación[/b], hemos usado el [i]Top 10 de vulnerabilidades de OWASP para identificar a esos malvados atacantes.[/i]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 903004615599666,
+							"parameters": {
+								"x": "10",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 624403012214197,
+							"parameters": {
+								"x": "10",
+								"y": "1",
+								"value": "\"Así que ¡allá vamos!\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 506700637624146,
+							"parameters": {
+								"x": "11",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 111332324144437,
+							"parameters": {
+								"x": "11",
+								"y": "1",
+								"value": "\"Primero tenemos a éste amable señor: [size=35][icon=Legitimate][/size] Estos son usuarios legítimos, son a los que debemos proteger :)\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 955061052697931,
+							"parameters": {
+								"x": "12",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 502472901313048,
+							"parameters": {
+								"x": "12",
+								"y": "1",
+								"value": "\"Luego están estos sujetos aterradores: [size=35][icon=A1][/size] Son los que utilizan la amenaza [b]A1: Inyección[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 909838487757425,
+							"parameters": {
+								"x": "13",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 120370193323988,
+							"parameters": {
+								"x": "13",
+								"y": "1",
+								"value": "\"Les encanta inyectar código que no queremos ejecutar en nuestros servidores, como consultas SQL dañinas, por ejemplo.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 332059522420230,
+							"parameters": {
+								"x": "14",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 525382425108177,
+							"parameters": {
+								"x": "14",
+								"y": "1",
+								"value": "\"Uuu, estos fantasmagóricos sujetos: [size=35][icon=A2][/size] Son los que atacan con [b]A2: Pérdida de autenticación y gestión de sesiones[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 936713317827968,
+							"parameters": {
+								"x": "15",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 962057471292502,
+							"parameters": {
+								"x": "15",
+								"y": "1",
+								"value": "\"Básicamente se roban tus Cookies o Tokens para suplantarte.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 750077129585145,
+							"parameters": {
+								"x": "16",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 490216338342820,
+							"parameters": {
+								"x": "16",
+								"y": "1",
+								"value": "\"Este sucio personaje: [size=35][icon=A3][/size] usa el infame [b]A3: Secuencia de comandos en sitios cruzados (XSS)[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 764331131086858,
+							"parameters": {
+								"x": "17",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 396614389662693,
+							"parameters": {
+								"x": "17",
+								"y": "1",
+								"value": "\"Astutamente introduce código que se ejecuta en en el navegador de nuestros amados usuarios [icon=Legitimate].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 780530972051448,
+							"parameters": {
+								"x": "18",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 679106449774913,
+							"parameters": {
+								"x": "18",
+								"y": "1",
+								"value": "\"Me caen especialmente mal\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 298304623862938,
+							"parameters": {
+								"x": "19",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 475118882662392,
+							"parameters": {
+								"x": "19",
+								"y": "1",
+								"value": "\"No te dejes engañar por esta simpática señorita: [size=35][icon=A4][/size] usa sus encantos para perpetrar un [b]A4: Control de acceso sin protección[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 348286053131614,
+							"parameters": {
+								"x": "20",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 206949392563952,
+							"parameters": {
+								"x": "20",
+								"y": "1",
+								"value": "\"A alguien en la oficina se le olvidó reforzar el sistema de permisos y deja que la gente vea y haga cosas que no son propias de su rol.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 215784446978544,
+							"parameters": {
+								"x": "21",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 432369968494378,
+							"parameters": {
+								"x": "21",
+								"y": "1",
+								"value": "\"Sabes, la configuración no es lo mío, por eso somos víctimas recurrentes de éste sujeto: [size=35][icon=A5][/size]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 960502523424110,
+							"parameters": {
+								"x": "22",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 133421487799438,
+							"parameters": {
+								"x": "22",
+								"y": "1",
+								"value": "\"Es un sujeto muy listo al que le gusta usar [b]A5: Configuración de seguridad incorrecta.[/b] Siempre se las arregla para meterse en nuestros servidores.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 174603180470804,
+							"parameters": {
+								"x": "23",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 823818103898942,
+							"parameters": {
+								"x": "23",
+								"y": "1",
+								"value": "\"Por todo lo anterior, mucha información sensible de nuestros amados usuarios [icon=Legitimate] ha terminado en manos de éste sujeto [size=35][icon=A6][/size]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 281497072354409,
+							"parameters": {
+								"x": "24",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 460689737364337,
+							"parameters": {
+								"x": "24",
+								"y": "1",
+								"value": "\"Siempre aprovechándose de nuestras fallas para hacer un [b]A6: Exposición de datos sensibles.[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 593267863417160,
+							"parameters": {
+								"x": "25",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 132854064992699,
+							"parameters": {
+								"x": "25",
+								"y": "1",
+								"value": "\"Nuestros problemas de protección atraen a gente muy agersiva, como este sujeto: [size=35][icon=A7][/size]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 247216377376815,
+							"parameters": {
+								"x": "26",
+								"y": "0",
+								"value": "\"Scared\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 196568563488627,
+							"parameters": {
+								"x": "26",
+								"y": "1",
+								"value": "\"Es un atacante que no para de aprovechar el [b]A7: Protección insuficiente contra ataques[/b], realmente me da miedo\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 801947381540593,
+							"parameters": {
+								"x": "27",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 888568014679188,
+							"parameters": {
+								"x": "27",
+								"y": "1",
+								"value": "\"Aquí tenemos a este sujeto [size=35][icon=A8][/size] que anda sacándonos información usando formularios falsos.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 232006757353300,
+							"parameters": {
+								"x": "28",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 980910018187008,
+							"parameters": {
+								"x": "28",
+								"y": "1",
+								"value": "\"Se la pasa explotando nuestra vulnerabilidad ante [b]A8: Falsificación de peticiones en sitios cruzados (CSRF)[/b].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 708817652508672,
+							"parameters": {
+								"x": "29",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 258862378977368,
+							"parameters": {
+								"x": "29",
+								"y": "1",
+								"value": "\"Luego tenemos a este tipo: [size=35][icon=A9][/size]. Es un listillo que se ha dado cuenta de nuestro [b]A9: Uso de componentes con variables conocidas[/b]\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 773337122084279,
+							"parameters": {
+								"x": "30",
+								"y": "0",
+								"value": "\"Sad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 578215487579619,
+							"parameters": {
+								"x": "30",
+								"y": "1",
+								"value": "\"Lastimosamente, algunos de nuestros componentes tienen demasiados privilegios y son bastante conocidos, por lo que es fácil saber dónde 'pinchar', para hacer estragos.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 179584066173968,
+							"parameters": {
+								"x": "31",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 358530870705150,
+							"parameters": {
+								"x": "31",
+								"y": "1",
+								"value": "\"Por último, la pobre protección de nuestra API le está dando paso a éste sujeto: [size=35][icon=A9][/size].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 197877387345937,
+							"parameters": {
+								"x": "31",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 154796083415346,
+							"parameters": {
+								"x": "31",
+								"y": "1",
+								"value": "\"Por último, la pobre protección de nuestra API le está dando paso a éste sujeto: [size=35][icon=A10][/size].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 111546178252082,
+							"parameters": {
+								"x": "32",
+								"y": "0",
+								"value": "\"Disgusted\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 616083853575322,
+							"parameters": {
+								"x": "32",
+								"y": "1",
+								"value": "\"Es alguien muy escurridizo que gusta de abusar de [b]A10: API con baja protección.[/b]\""
 							}
 						}
 					],

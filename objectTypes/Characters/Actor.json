@@ -76,7 +76,7 @@
 						"imageSpriteId": 6206154,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "Legitimate"
 					}
 				],
 				"sid": 222412327155891,
@@ -100,7 +100,7 @@
 						"imageSpriteId": 2395596,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A1"
 					}
 				],
 				"sid": 185784710508147,
@@ -124,7 +124,7 @@
 						"imageSpriteId": 690335,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A2"
 					}
 				],
 				"sid": 227010302276164,
@@ -148,7 +148,7 @@
 						"imageSpriteId": 193340,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A3"
 					}
 				],
 				"sid": 435691179335733,
@@ -172,7 +172,7 @@
 						"imageSpriteId": 9518787,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A4"
 					}
 				],
 				"sid": 216582008004284,
@@ -196,7 +196,7 @@
 						"imageSpriteId": 6728218,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A5"
 					}
 				],
 				"sid": 758323505302021,
@@ -220,7 +220,7 @@
 						"imageSpriteId": 5849027,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A6"
 					}
 				],
 				"sid": 424168764214480,
@@ -244,7 +244,7 @@
 						"imageSpriteId": 6869302,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A7"
 					}
 				],
 				"sid": 923871576825158,
@@ -268,7 +268,7 @@
 						"imageSpriteId": 9832331,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A8"
 					}
 				],
 				"sid": 893175617368585,
@@ -292,7 +292,7 @@
 						"imageSpriteId": 5430545,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A9"
 					}
 				],
 				"sid": 712912045233333,
@@ -316,7 +316,7 @@
 						"imageSpriteId": 6081751,
 						"useCollisionPoly": true,
 						"duration": 1,
-						"tag": ""
+						"tag": "A10"
 					}
 				],
 				"sid": 852992720674641,

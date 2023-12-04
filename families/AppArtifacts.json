@@ -1,0 +1,23 @@
+{
+	"name": "AppArtifacts",
+	"plugin-id": "Sprite",
+	"sid": 244850527246270,
+	"instanceVariables": [
+		{
+			"name": "Secure",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 327783320165736
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Business",
+		"DB",
+		"WebApp",
+		"Sprite2",
+		"MobileApp"
+	]
+}

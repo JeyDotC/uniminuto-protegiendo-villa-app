@@ -1,39 +1,37 @@
 {
-	"name": "NextButton",
+	"name": "Watchers",
 	"plugin-id": "Sprite",
-	"sid": 360426300073559,
+	"sid": 193711196064426,
 	"isGlobal": false,
-	"instanceVariables": [
+	"instanceVariables": [],
+	"behaviorTypes": [
 		{
-			"name": "Clickable",
-			"type": "boolean",
-			"desc": "",
-			"show": false,
-			"sid": 887640297020406
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 779181498587319
 		}
 	],
-	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 76,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 64,
+						"height": 96,
+						"originX": 0.53125,
+						"originY": 0.5306122448979592,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7756166,
+						"imageSpriteId": 7590663,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 286859275316033,
-				"name": "Next",
+				"sid": 414455446142298,
+				"name": "EntryValidation",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -43,21 +41,21 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 76,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 64,
+						"height": 96,
+						"originX": 0.53125,
+						"originY": 0.5306122448979592,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1761612,
+						"imageSpriteId": 886894,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 507469732179752,
-				"name": "Restart",
+				"sid": 928787106758736,
+				"name": "ActionValidation",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

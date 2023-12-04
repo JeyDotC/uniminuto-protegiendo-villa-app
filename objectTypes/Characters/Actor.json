@@ -34,6 +34,21 @@
 			"behaviorId": "Fade",
 			"name": "FadeIn",
 			"sid": 408607163705231
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 367899076217892
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 580399088491549
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 997957994782813
 		}
 	],
 	"effectTypes": [],

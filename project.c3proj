@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
@@ -71,6 +78,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -79,7 +100,9 @@
 	],
 	"uniqueId": "mzw6euhxrte",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Watchers"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -133,7 +156,9 @@
 	"autosaveData": null,
 	"containers": [],
 	"families": {
-		"items": [],
+		"items": [
+			"AppArtifacts"
+		],
 		"subfolders": []
 	},
 	"layouts": {

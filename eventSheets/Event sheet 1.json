@@ -36,6 +36,46 @@
 					}
 				},
 				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 982432478917265,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"RevealEntryValidationWarchers\"",
+						"function": "RevealEntryValidationWarchers"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 862002032173056,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"RevealActionValidationWarchers\"",
+						"function": "RevealActionValidationWarchers"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 837803809668279,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"SecureArtifacts\"",
+						"function": "SecureArtifacts"
+					}
+				},
+				{
+					"id": "map-function",
+					"objectClass": "Functions",
+					"sid": 146126087852294,
+					"parameters": {
+						"name": "\"DialogActions\"",
+						"string": "\"ChangeButtonAnimation\"",
+						"function": "ChangeButtonAnimation"
+					}
+				},
+				{
 					"id": "wait",
 					"objectClass": "System",
 					"sid": 182813596596278,
@@ -297,6 +337,310 @@
 						}
 					],
 					"sid": 893734718040055
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Actor",
+							"sid": 767985812454060,
+							"parameters": {
+								"object": "Watchers"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Watchers",
+							"sid": 647260109794297
+						}
+					],
+					"actions": [],
+					"sid": 259165350789817,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Watchers",
+									"sid": 906407256016050,
+									"parameters": {
+										"animation": "\"EntryValidation\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 182751746309220,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 150689638992304,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A1\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 888673137326142,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A3\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 414544189364389,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A10\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "EliminateThreat",
+											"sid": 446613797238206,
+											"parameters": [
+												"Actor.UID"
+											]
+										}
+									],
+									"sid": 183398878695441,
+									"isOrBlock": true
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Watchers",
+									"sid": 139455414559084,
+									"parameters": {
+										"animation": "\"ActionValidation\""
+									}
+								}
+							],
+							"actions": [],
+							"sid": 490854821072515,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 708689177363519,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A2\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 725661704354172,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A4\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 544405293992101,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A6\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 321000986450113,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A7\""
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Actor",
+											"sid": 372224364686137,
+											"parameters": {
+												"instance-variable": "UserType",
+												"comparison": 0,
+												"value": "\"A8\""
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "EliminateThreat",
+											"sid": 932471863551235,
+											"parameters": [
+												"Actor.UID"
+											]
+										}
+									],
+									"sid": 883940603709530,
+									"isOrBlock": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"functionName": "EliminateThreat",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "ThreatUID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 359830722236235
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 169937570872006,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "Actor",
+									"sid": 825083684188835,
+									"parameters": {
+										"unique-id": "ThreatUID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "Actor",
+									"sid": 827594412629122,
+									"behaviorType": "Pathfinding",
+									"parameters": {
+										"set": "disabled"
+									}
+								},
+								{
+									"id": "set-angle-of-motion",
+									"objectClass": "Actor",
+									"sid": 880634384751874,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"angle": "random(0, -180)"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Actor",
+									"sid": 919232691458321,
+									"behaviorType": "Bullet",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Actor",
+									"sid": 560054052473261,
+									"behaviorType": "Rotate",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 730366295212273
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Actor",
+							"sid": 421769602385090,
+							"parameters": {
+								"object": "AppArtifacts"
+							}
+						},
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "AppArtifacts",
+							"sid": 114445316347420,
+							"parameters": {
+								"instance-variable": "Secure"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 818542686972830,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 898747948423752,
+									"parameters": {
+										"instance-variable": "UserType",
+										"comparison": 0,
+										"value": "\"A5\""
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Actor",
+									"sid": 437221804236420,
+									"parameters": {
+										"instance-variable": "UserType",
+										"comparison": 0,
+										"value": "\"A9\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "EliminateThreat",
+									"sid": 786006020880991,
+									"parameters": [
+										"Actor.UID"
+									]
+								}
+							],
+							"sid": 153964707853465,
+							"isOrBlock": true
+						}
+					]
 				}
 			],
 			"sid": 124879747200807
@@ -1028,6 +1372,266 @@
 								"y": "1",
 								"value": "\"Es alguien muy escurridizo que gusta de abusar de [b]A10: API con baja protección.[/b]\""
 							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 783829649473613,
+							"parameters": {
+								"x": "33",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 261679886920001,
+							"parameters": {
+								"x": "33",
+								"y": "1",
+								"value": "\"Wow ¡Esas son muchas amenazas! Pero no te preocupes, en nuestro proceso de [b]S-SDLC[/b], hemos establecido diferentes mecanismo de seguridad para arreglar toda esta locura.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 672083844516565,
+							"parameters": {
+								"x": "34",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 948389860164010,
+							"parameters": {
+								"x": "34",
+								"y": "1",
+								"value": "\"Hemos clasificado las amenazas en tres grandes categorías, y hemos creado defenzas que las detienen.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 250220499982114,
+							"parameters": {
+								"x": "35",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 937231449557129,
+							"parameters": {
+								"x": "35",
+								"y": "1",
+								"value": "\"Lo primero que implementamos es [b]Validación de entrada[/b], y se encarga de detener a aquellos que intentan introducir código peligroso en nuestra aplicación .\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 865544093578337,
+							"parameters": {
+								"x": "36",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 151961713070218,
+							"parameters": {
+								"x": "36",
+								"y": "1",
+								"value": "\"Es decir a A1 [icon=a1], A3 [icon=a3] y A10 [icon=a10]... ¡Solo mira como salen volando! .\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 948023281064236,
+							"parameters": {
+								"x": "36",
+								"y": "2",
+								"value": "\"RevealEntryValidationWarchers\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 100652310159846,
+							"parameters": {
+								"x": "37",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 320265819844690,
+							"parameters": {
+								"x": "37",
+								"y": "1",
+								"value": "\"Vaya, nos hemos deshecho de algunos malechores, pero aún nos faltan otros siete tipos. Por lo que pondremos otra capa de seguridad.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 617344892007704,
+							"parameters": {
+								"x": "38",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 316754195783635,
+							"parameters": {
+								"x": "38",
+								"y": "1",
+								"value": "\"Este señor que está en la [b]Lógica de negocio[/b] se llama [b]Validación de Acciones[/b] y se asegura de que todos hagan única y exclusivamente lo que les está permitido.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 750712727818974,
+							"parameters": {
+								"x": "38",
+								"y": "2",
+								"value": "\"RevealActionValidationWarchers\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 921607722607972,
+							"parameters": {
+								"x": "39",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 419541673552783,
+							"parameters": {
+								"x": "39",
+								"y": "1",
+								"value": "\"Esto parece una partida de ¡Smash Bros! gracias a la validación de acciones, nos hemos podido deshacer de A2 [icon=a2], A4 [icon=a4], A6 [icon=a6], A7 [icon=a7] y A8 [icon=a8].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 585109932638483,
+							"parameters": {
+								"x": "40",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 704044680840670,
+							"parameters": {
+								"x": "40",
+								"y": "1",
+								"value": "\"Ya solo nos faltan dos tipos de amenaza: A5 [icon=a5] y A9 [icon=a9], Para combatirlas, simplemente reforzamos todos los edificios con [b]Gestión de Cambios[/b].\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 801700980274276,
+							"parameters": {
+								"x": "41",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 383228003692049,
+							"parameters": {
+								"x": "41",
+								"y": "1",
+								"value": "\"Nos hemos vuelto más cuidadosos con nuestras dependencias y ahora los tipos malos no pueden entrar.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 182247250181749,
+							"parameters": {
+								"x": "41",
+								"y": "2",
+								"value": "\"SecureArtifacts\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 510893172770354,
+							"parameters": {
+								"x": "42",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 857724741923598,
+							"parameters": {
+								"x": "42",
+								"y": "1",
+								"value": "\"Por fin, Villa App está protegida contra los usuarios maliciosos y sólo los buenos ciudadanos la pueden transitar.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 366567376668650,
+							"parameters": {
+								"x": "43",
+								"y": "0",
+								"value": "\"Glad\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 154127338694944,
+							"parameters": {
+								"x": "43",
+								"y": "1",
+								"value": "\"Gracias por acompañarnos en esta aventura, espero que te haya servido para aprender sobre los distintos tipos de amenaza. Nos vemos pronto en otra aventura.\""
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "Dialogs",
+							"sid": 876169461859341,
+							"parameters": {
+								"x": "43",
+								"y": "2",
+								"value": "\"ChangeButtonAnimation\""
+							}
 						}
 					],
 					"sid": 467457548508982
@@ -1200,6 +1804,147 @@
 						}
 					],
 					"sid": 316832472706552
+				},
+				{
+					"functionName": "RevealEntryValidationWarchers",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 628928904647778,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Watchers",
+									"sid": 667983611674485,
+									"parameters": {
+										"animation": "\"EntryValidation\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Watchers",
+									"sid": 458194159469613,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Watchers",
+									"sid": 134589945422636,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 711108562872624
+						}
+					]
+				},
+				{
+					"functionName": "RevealActionValidationWarchers",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 309933306567474,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "Watchers",
+									"sid": 170449203216008,
+									"parameters": {
+										"animation": "\"ActionValidation\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Watchers",
+									"sid": 123237637594932,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "start-fade",
+									"objectClass": "Watchers",
+									"sid": 329757742462840,
+									"behaviorType": "Fade"
+								}
+							],
+							"sid": 222857345886119
+						}
+					]
+				},
+				{
+					"functionName": "SecureArtifacts",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "AppArtifacts",
+							"sid": 252657842818208,
+							"parameters": {
+								"instance-variable": "Secure",
+								"value": "true"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Fire",
+							"sid": 527077641506381
+						}
+					],
+					"sid": 612311952977875
+				},
+				{
+					"functionName": "ChangeButtonAnimation",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionCopyPicked": false,
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "NextButton",
+							"sid": 872312415338061,
+							"parameters": {
+								"animation": "\"Restart\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 425724289414600
 				}
 			],
 			"sid": 494997529829919
@@ -1233,13 +1978,48 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 647557458833895,
+					"children": [
 						{
-							"callFunction": "NextDialog",
-							"sid": 930674909086047
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "NextButton",
+									"sid": 537440990551679,
+									"parameters": {
+										"animation": "\"Next\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "NextDialog",
+									"sid": 371326308045230
+								}
+							],
+							"sid": 599129684696064
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 990972185266817
+								}
+							],
+							"actions": [
+								{
+									"id": "restart-layout",
+									"objectClass": "System",
+									"sid": 457667360399595
+								}
+							],
+							"sid": 954810414560602
 						}
-					],
-					"sid": 647557458833895
+					]
 				}
 			],
 			"sid": 903490487364262
